@@ -6,6 +6,10 @@ public abstract class GameEvent : ScriptableObject {
 
 	protected List<GameEventListener> listeners = new List<GameEventListener>();
 
+	public void Awake() {
+		listeners.Clear();
+	}
+
 	public void RegisterListener(GameEventListener listener) {
 		listeners.Add(listener);
 	}
