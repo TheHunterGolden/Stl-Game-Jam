@@ -10,11 +10,13 @@ public class Ball : MonoBehaviour {
 	[SerializeField]
 	private Vector3 dir;
 	[SerializeField]
+	private float mainSpeed;
 	private float speed;
 
 	// Use this for initialization
 	void Start () {
 		getNextPoint();
+		speed = mainSpeed;
 	}
 	
 	// Update is called once per frame
@@ -30,10 +32,19 @@ public class Ball : MonoBehaviour {
 		}
 	}
 
-	private void getNextPoint()
-	{
-		targetRailPoint = targetRailPoint.NextPoint;
+	private void getNextPoint() {
+		checkSameNextPoint();
+		targetRailPoint = targetRailPoint.nextPoint;
 		dir = targetRailPoint.transform.position - transform.position ;
 		dir.Normalize();
+	}
+
+	private void checkSameNextPoint() {
+		if(targetRailPoint == targetRailPoint.nextPoint) {
+			speed = 0;
+		}
+		else {
+			speed = mainSpeed;
+		}
 	}
 }
