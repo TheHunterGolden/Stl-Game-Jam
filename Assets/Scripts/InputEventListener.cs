@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class GameEventListener : MonoBehaviour {
+public abstract class InputEventListener : GameEventListener {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,6 @@ public abstract class GameEventListener : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public abstract void RaiseEvent(InputCode ic);
 }

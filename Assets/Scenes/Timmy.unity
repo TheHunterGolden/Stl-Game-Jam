@@ -377,11 +377,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &419297155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 419297157}
+  - component: {fileID: 419297156}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &419297156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 419297155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67bbdee753fc8824080a8a652977b147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputs:
+  - {fileID: 11400000, guid: 5a59f89be3e3297428422371bbf62928, type: 2}
+  - {fileID: 11400000, guid: dde278bed0859294d897541d5159907a, type: 2}
+  - {fileID: 11400000, guid: 39f18aabbe268c943bb6bac41f279ac0, type: 2}
+  - {fileID: 11400000, guid: ac63811b8a4db7746ab4d0bf65520f0d, type: 2}
+  - {fileID: 11400000, guid: 209202e8b8a8c8a40b3fa142db822907, type: 2}
+  - {fileID: 11400000, guid: f92f04e558b5d1e4f93e3bfccf10ed4c, type: 2}
+--- !u!4 &419297157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 419297155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8739355, y: 1.1468248, z: -0.40625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &628451058 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1158046467762862, guid: b754b94818d1f304ba03e0796acfece3,
     type: 2}
   m_PrefabInternal: {fileID: 1008971584}
+--- !u!114 &628451059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628451058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29b8a3a1025a75488f47739b168aa3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &628451062
 MonoBehaviour:
   m_ObjectHideFlags: 0

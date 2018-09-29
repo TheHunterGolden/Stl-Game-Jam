@@ -25,6 +25,7 @@ public class Ball : MonoBehaviour {
 	void FixedUpdate() {
 		transform.Translate(dir * speed);
 		if((targetRailPoint.transform.position - transform.position).sqrMagnitude < (dir * speed).sqrMagnitude) {
+			transform.SetPositionAndRotation(targetRailPoint.transform.position, Quaternion.identity);
 			getNextPoint();
 		}
 	}
