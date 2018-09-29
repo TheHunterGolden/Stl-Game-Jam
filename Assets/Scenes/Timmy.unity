@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextPoint: {fileID: 246017567}
-  isSwitch: 0
+  isSwitch: 1
   switchClock: {fileID: 388154733}
   switchCounter: {fileID: 187568578}
   switchPassThru: {fileID: 0}
