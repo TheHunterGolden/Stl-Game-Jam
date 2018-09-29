@@ -235,8 +235,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextPoint: {fileID: 246017567}
   isSwitch: 0
-  switchClock: {fileID: 0}
-  switchCounter: {fileID: 0}
+  switchClock: {fileID: 388154733}
+  switchCounter: {fileID: 187568578}
   switchPassThru: {fileID: 0}
 --- !u!212 &246017568
 SpriteRenderer:

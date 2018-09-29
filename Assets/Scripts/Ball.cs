@@ -26,25 +26,31 @@ public class Ball : MonoBehaviour {
 
 	void FixedUpdate() {
 		transform.Translate(dir * speed);
-		if((targetRailPoint.transform.position - transform.position).sqrMagnitude < (dir * speed).sqrMagnitude) {
+		if((targetRailPoint.transform.position - transform.position).sqrMagnitude <= (dir * speed).sqrMagnitude) {
 			transform.SetPositionAndRotation(targetRailPoint.transform.position, Quaternion.identity);
 			getNextPoint();
 		}
 	}
 
 	private void getNextPoint() {
-		checkSameNextPoint();
+		bool test = checkSameNextPoint();
 		targetRailPoint = targetRailPoint.nextPoint;
-		dir = targetRailPoint.transform.position - transform.position ;
-		dir.Normalize();
+		if(!test) {
+			targetRailPoint.Activate();
+			dir = targetRailPoint.transform.position - transform.position ;
+			dir.Normalize();
+		}
 	}
 
-	private void checkSameNextPoint() {
+	private bool checkSameNextPoint() {
 		if(targetRailPoint == targetRailPoint.nextPoint) {
 			speed = 0;
+			return true;
 		}
 		else {
+			targetRailPoint.Deactivate();
 			speed = mainSpeed;
+			return false;
 		}
 	}
 }

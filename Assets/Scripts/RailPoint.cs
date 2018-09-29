@@ -19,24 +19,7 @@ public class RailPoint : InputEventListener {
 
 	// Use this for initialization
 	void Start () {
-		if(isSwitch) {
-			InputManager mgr = (InputManager) GameObject.Find("InputManager").GetComponent("InputManager");
 
-			if(switchCounter != null) {
-				nextPoint.nextPoint = this;
-				mgr.RegisterListener(this, InputCode.Up);
-			}
-
-			if(switchClock != null) {
-				nextPoint.nextPoint = this;
-				mgr.RegisterListener(this, InputCode.Down);
-			}
-
-			if(switchPassThru != null) {
-				nextPoint.nextPoint = switchPassThru;
-				mgr.RegisterListener(this, InputCode.Right);
-			}
-		}
 	}
 	
 	// Update is called once per frame
@@ -46,13 +29,50 @@ public class RailPoint : InputEventListener {
 
 	public override void RaiseEvent(InputCode ic) {
 		if(ic == InputCode.Up) {
-			nextPoint.nextPoint = switchCounter;
+			nextPoint = switchCounter;
 		}
 		else if(ic == InputCode.Right) {
-			nextPoint.nextPoint = switchPassThru;
+			nextPoint = switchPassThru;
 		}
 		else if(ic == InputCode.Down) {
-			nextPoint.nextPoint = switchClock;
+			nextPoint = switchClock;
+		}
+	}
+
+	public void Activate() {
+		if(isSwitch) {
+			InputManager mgr = (InputManager) GameObject.Find("InputManager").GetComponent("InputManager");
+
+			if(switchCounter != null) {
+				nextPoint = this;
+				mgr.RegisterListener(this, InputCode.Up);
+			}
+
+			if(switchClock != null) {
+				nextPoint = this;
+				mgr.RegisterListener(this, InputCode.Down);
+			}
+
+			if(switchPassThru != null) {
+				nextPoint = switchPassThru;
+				mgr.RegisterListener(this, InputCode.Right);
+			}
+		}
+	}
+
+	public void Deactivate() {
+		InputManager mgr = (InputManager) GameObject.Find("InputManager").GetComponent("InputManager");
+
+		if(switchCounter != null) {
+			mgr.DeregisterListener(this, InputCode.Up);
+		}
+
+		if(switchClock != null) {
+			mgr.DeregisterListener(this, InputCode.Down);
+		}
+
+		if(switchPassThru != null) {
+			mgr.DeregisterListener(this, InputCode.Right);
 		}
 	}
 }
