@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 1382ec22b77d2c14cbc98838fdbb0c7f
+guid: bb32a89b593752744b8c2dd80dd94959
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Sparky-Sprite-Sheet_0
-    21300002: Sparky-Sprite-Sheet_1
-    21300004: Sparky-Sprite-Sheet_2
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -34,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -43,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -85,71 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Sparky-Sprite-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 15
-        width: 38
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5c53fa8de7afa24aa517ac5c173ac53
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sparky-Sprite-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 15
-        width: 38
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15c382a9ddc0360489f5b61f8f56a417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sparky-Sprite-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 15
-        width: 38
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d3731ea5b5a58b46894d727ba293ce6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ece7d307414842d42aa2954ca74930bd
+    spriteID: 7fb239ee72d900f49a563e5b7e82681f
     vertices: []
     indices: 
     edges: []
