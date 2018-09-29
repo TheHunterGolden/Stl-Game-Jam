@@ -10,11 +10,13 @@ public class Ball : MonoBehaviour {
 	[SerializeField]
 	private Vector3 dir;
 	[SerializeField]
+	private float mainSpeed;
 	private float speed;
 
 	// Use this for initialization
 	void Start () {
 		getNextPoint();
+		speed = mainSpeed;
 	}
 	
 	// Update is called once per frame
@@ -24,16 +26,31 @@ public class Ball : MonoBehaviour {
 
 	void FixedUpdate() {
 		transform.Translate(dir * speed);
-		if((targetRailPoint.transform.position - transform.position).sqrMagnitude < (dir * speed).sqrMagnitude) {
+		if((targetRailPoint.transform.position - transform.position).sqrMagnitude <= (dir * speed).sqrMagnitude) {
 			transform.SetPositionAndRotation(targetRailPoint.transform.position, Quaternion.identity);
 			getNextPoint();
 		}
 	}
 
-	private void getNextPoint()
-	{
-		targetRailPoint = targetRailPoint.NextPoint;
-		dir = targetRailPoint.transform.position - transform.position ;
-		dir.Normalize();
+	private void getNextPoint() {
+		bool test = checkSameNextPoint();
+		targetRailPoint = targetRailPoint.nextPoint;
+		if(!test) {
+			targetRailPoint.Activate();
+			dir = targetRailPoint.transform.position - transform.position ;
+			dir.Normalize();
+		}
+	}
+
+	private bool checkSameNextPoint() {
+		if(targetRailPoint == targetRailPoint.nextPoint) {
+			speed = 0;
+			return true;
+		}
+		else {
+			targetRailPoint.Deactivate();
+			speed = mainSpeed;
+			return false;
+		}
 	}
 }

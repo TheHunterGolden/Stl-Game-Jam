@@ -4,7 +4,11 @@ using UnityEngine;
 
 public abstract class GameEvent : ScriptableObject {
 
-	protected List<GameEventListener> listeners = new List<GameEventListener>();
+	protected HashSet<GameEventListener> listeners = new HashSet<GameEventListener>();
+
+	public void Awake() {
+		listeners.Clear();
+	}
 
 	public void RegisterListener(GameEventListener listener) {
 		listeners.Add(listener);
