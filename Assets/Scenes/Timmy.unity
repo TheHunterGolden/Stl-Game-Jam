@@ -142,6 +142,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextPoint: {fileID: 388154733}
+  isSwitch: 0
+  switchClock: {fileID: 0}
+  switchCounter: {fileID: 0}
+  switchPassThru: {fileID: 0}
 --- !u!212 &187568579
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -229,7 +233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPoint: {fileID: 187568578}
+  nextPoint: {fileID: 246017567}
+  isSwitch: 0
+  switchClock: {fileID: 0}
+  switchCounter: {fileID: 0}
+  switchPassThru: {fileID: 0}
 --- !u!212 &246017568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -318,6 +326,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextPoint: {fileID: 246017567}
+  isSwitch: 0
+  switchClock: {fileID: 0}
+  switchCounter: {fileID: 0}
+  switchPassThru: {fileID: 0}
 --- !u!212 &388154734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -453,7 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRailPoint: {fileID: 388154733}
   dir: {x: 0, y: 0, z: 0}
-  speed: 0.05
+  mainSpeed: 1
 --- !u!1001 &1008971584
 Prefab:
   m_ObjectHideFlags: 0
