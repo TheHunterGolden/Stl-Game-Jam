@@ -2,20 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Cammera_Controller : MonoBehaviour {
 
-    private Vector2 velocity;
+    [SerializeField]
+    private Transform followObject;
 
-    public GameObject player;
-    public float smoothTimeY;
-    public float smoothTimeX;
+    private Vector3 moveTemp;
+
+    [SerializeField]
+    private Vector3 offset = new Vector3(5.0f, 0.0f, 0.0f);
+
+    void Start ()
+    {
+        moveTemp = followObject.transform.position;
+    }
 
     void LateUpdate()
     {
-        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
-        float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeX);
+        moveTemp = followObject.transform.position;
+        moveTemp.x += offset.x;
+        moveTemp.y = offset.y;
+        moveTemp.z = transform.position.z;
+        transform.position = moveTemp;
 
-        transform.position = new Vector3(posX, posY, transform.position.z);
     }
 	
 }
