@@ -8,19 +8,24 @@ public class Sparky_Controller : MonoBehaviour {
 
     void Update()
     {
-        // Get the horizontal and vertical axis.
-        // By default they are mapped to the arrow keys.
-        // The value is in the range -1 to 1
-        float translation_y = Input.GetAxis("Vertical") * speed;
-        float translation_x = Input.GetAxis("Horizontal") * speed;
+        
+        float translation_x = 0.0f, translation_y = 0.0f;
+
+        //Input handling
+        if (Input.GetButton("Left"))
+            translation_x = -speed;
+        if (Input.GetButton("Right"))
+            translation_x = speed;
+        if (Input.GetButton("Up"))
+            translation_y = speed;
+        if (Input.GetButton("Down"))
+            translation_y = -speed;
 
         // Make it move 10 meters per second instead of 10 meters per frame...
         translation_x *= Time.deltaTime;
         translation_y *= Time.deltaTime;
 
         transform.Translate(translation_x, 0, 0);
-
-        // Rotate around our y-axis
         transform.Translate(0, translation_y, 0);
     }
 }
