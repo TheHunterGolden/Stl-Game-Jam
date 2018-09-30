@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GenerateMap : MonoBehaviour {
 
@@ -8,11 +9,16 @@ public class GenerateMap : MonoBehaviour {
     private GameObject rail;
     [SerializeField]
     private GameObject line;
+    [SerializeField]
+    private Canvas canvas;
+    private RectTransform rect;
+
     private float top;
     private float side;
 	// Use this for initialization
 	void Start () {
-        
+ 
+        rect = canvas.GetComponent<RectTransform>();
         top = Screen.width / 3;
         Debug.Log(top);
         side = Screen.height / 3;
@@ -27,7 +33,7 @@ public class GenerateMap : MonoBehaviour {
 
     void setRailEdges() {
         
-        Instantiate(rail, new Vector3(top , 0), Quaternion.identity); 
+        Instantiate(rail, new Vector3(rail.transform.position.x , rail.transform.position.y, rail.transform.position.z), Quaternion.identity ); 
             
     }
 }
