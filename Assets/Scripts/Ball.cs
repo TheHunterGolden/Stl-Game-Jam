@@ -19,8 +19,18 @@ public class Ball : MonoBehaviour {
 		speed = mainSpeed;
 	}
 	
-	// Update is called once per frame
-	void Update () {
+    public Vector3 getDir()
+    {
+        return dir;
+    }
+
+    public float getSpeed()
+    {
+        return speed;
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 

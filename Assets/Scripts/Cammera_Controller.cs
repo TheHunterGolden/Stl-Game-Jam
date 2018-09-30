@@ -6,78 +6,77 @@ using UnityEngine;
 public class Cammera_Controller : MonoBehaviour {
 
     [SerializeField]
+    private GameObject sparky;
+    
+    [SerializeField]
     private Transform followObject;
 
-    [SerializeField]
-    private float deltaSpeed = 0.5f;
+    private Ball ball;
+    private Vector3 ballDirections, prevBallDirections;
 
     [SerializeField]
     private float smoothTime = 0.25f;
 
     [SerializeField]
-    private float attachSpeed = 15.0f;
-
-    [SerializeField]
-    private float maxCameraSpeed = 20.0f;
+    private float offsetSpeed = 0.25f;
 
     private Vector3 moveTemp;
-    private float tempDeltaX;
-    private Vector2 moveSpeed = new Vector2(0.0f, 0.0f);
-    private Vector2 tmpMoveSpeed = new Vector2(0.0f, 0.0f);
+    private float tempDeltaX, tempDeltaY;
+    private float cameraSpeed, tempCameraSpeed;
 
     [SerializeField]
     private Vector3 offset = new Vector3(5.0f, 5.0f, 0.0f);
 
-
     void Start ()
     {
         moveTemp = followObject.transform.position;
+        ball = sparky.GetComponent<Ball>();
     }
 
     void LateUpdate()
     {
         //Input handling
-        if (Input.GetButton("Right") && moveSpeed.x <= maxCameraSpeed)
-        {
-            if (moveSpeed.x < 0.0f)
-                moveSpeed.x = 0.0f;
-            moveSpeed.x += deltaSpeed;
-        }
-        else if (Input.GetButton("Left") && moveSpeed.x >= -maxCameraSpeed)
-        {
-            if (moveSpeed.x > 0.0f)
-                moveSpeed.x = 0.0f;
-            moveSpeed.x -= deltaSpeed;
-        }
-        else if (moveSpeed.x > 0.0f)
-        {
-            moveSpeed.x -= deltaSpeed;
-        }
-        else if (moveSpeed.x < 0.0f)
-        {
-            moveSpeed.x += deltaSpeed;
-        }
+        ballDirections = ball.getDir();
+        cameraSpeed = ball.getSpeed();
 
         //position handling
         moveTemp = followObject.transform.position;
-        if (moveSpeed.x > 5.0f)
+        if (ballDirections.x > 0.0)
         {
-            moveTemp.x += offset.x;
-            print("In");
+            if (cameraSpeed > offsetSpeed)
+                moveTemp.x += offset.x;
+        }
+        else
+        {
+            if (cameraSpeed > offsetSpeed)
+                moveTemp.x -= 2.0f*offset.x;
         }
 
-        if (moveSpeed.x < -5.0f)
+        if (ballDirections.y > 0.0)
         {
-            moveTemp.x -= offset.x;
-            print("Here");
+            if (cameraSpeed > offsetSpeed)
+                moveTemp.y += offset.y;
         }
-        moveTemp.y = followObject.transform.position.y;
+        else
+        {
+            if (cameraSpeed > offsetSpeed)
+                moveTemp.y -= offset.y;
+        }
         moveTemp.z = transform.position.z;
 
+        //print("desired position: " + moveTemp);
+        //print("desired speed: " + cameraSpeed);
+        //print("current Directions: " + ballDirections);
+
+
         //movement smoothing
-        tmpMoveSpeed.x = moveSpeed.x;
-        tempDeltaX = Mathf.SmoothDamp(transform.position.x, moveTemp.x, ref tmpMoveSpeed.x, smoothTime);
+        tempCameraSpeed = cameraSpeed;
+        tempDeltaX = Mathf.SmoothDamp(transform.position.x, moveTemp.x, ref tempCameraSpeed, smoothTime);
         moveTemp.x = tempDeltaX;
+
+        tempCameraSpeed = cameraSpeed;
+        tempDeltaY = Mathf.SmoothDamp(transform.position.y, moveTemp.y, ref tempCameraSpeed, smoothTime);
+        moveTemp.y = tempDeltaY;
 
         //apply changes
         transform.position = moveTemp;
