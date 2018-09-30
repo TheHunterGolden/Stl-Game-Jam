@@ -13,6 +13,9 @@ public class Ball : MonoBehaviour {
 	private float mainSpeed;
 	private float speed;
 
+	public float passthrutime;
+	bool hit;
+
 	// Use this for initialization
 	void Awake () {
 		getDirectionVec(null);
@@ -37,9 +40,14 @@ public class Ball : MonoBehaviour {
 	void FixedUpdate() {
 		transform.Translate(dir * speed);
 		if((targetRailPoint.transform.position - transform.position).sqrMagnitude <= (dir * speed).sqrMagnitude) {
-			transform.SetPositionAndRotation(targetRailPoint.transform.position, Quaternion.identity);
+			hit = true;
+		}
+		if(hit) {
 			if(!checkSameNextPoint()){
 				getNextPoint();
+			}
+			else {
+				StartCoroutine("Passthru");
 			}
 		}
 	}
@@ -59,13 +67,21 @@ public class Ball : MonoBehaviour {
 
 	private bool checkSameNextPoint() {
 		if(targetRailPoint.nextPoint == null) {
-			speed = 0;
 			return true;
 		}
 		else {
-			targetRailPoint.Deactivate();
 			speed = mainSpeed;
 			return false;
 		}
+	}
+
+	IEnumerator Passthru() {
+		yield return new WaitForSeconds(passthrutime);
+		hit = false;
+		targetRailPoint.GetPassThru();
+		targetRailPoint.Deactivate();
+		getNextPoint();
+		StopAllCoroutines();
+		yield return null;
 	}
 }

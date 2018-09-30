@@ -19,6 +19,8 @@ public class RailPoint : InputEventListener {
 
 	public float joystickResetTime;
 
+	public InputCode direction;
+
 	// Use this for initialization
 	void Start () {
 
@@ -51,7 +53,6 @@ public class RailPoint : InputEventListener {
 
 			InputManager mgr = (InputManager) GameObject.Find("InputManager").GetComponent("InputManager");
 
-			InputCode direction;
 			for(direction = (InputCode) 0; direction < InputCode.Button1 && Switches[(int) direction] != point; direction++) {
 			}
 
@@ -77,6 +78,11 @@ public class RailPoint : InputEventListener {
 			mgr.DeregisterListener(this, i);
 		}
 
+	}
+
+	public void GetPassThru() {
+		InputCode passthru = (InputCode) (((int) direction + 2) % (int) InputCode.Button1);
+		nextPoint = Switches[(int) passthru];
 	}
 
 }
