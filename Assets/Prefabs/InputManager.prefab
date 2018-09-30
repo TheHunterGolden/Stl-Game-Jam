@@ -53,8 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputs:
   - {fileID: 11400000, guid: 5a59f89be3e3297428422371bbf62928, type: 2}
-  - {fileID: 11400000, guid: dde278bed0859294d897541d5159907a, type: 2}
   - {fileID: 11400000, guid: 39f18aabbe268c943bb6bac41f279ac0, type: 2}
+  - {fileID: 11400000, guid: dde278bed0859294d897541d5159907a, type: 2}
   - {fileID: 11400000, guid: ac63811b8a4db7746ab4d0bf65520f0d, type: 2}
   - {fileID: 11400000, guid: 209202e8b8a8c8a40b3fa142db822907, type: 2}
   - {fileID: 11400000, guid: f92f04e558b5d1e4f93e3bfccf10ed4c, type: 2}

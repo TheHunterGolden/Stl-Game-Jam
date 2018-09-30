@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7013e4bed50d97e49b6852a04729b17f, type: 3}
   m_Name: InputDown
   m_EditorClassIdentifier: 
-  inputCode: 1
+  inputCode: 2

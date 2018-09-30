@@ -14,8 +14,8 @@ public class Ball : MonoBehaviour {
 	private float speed;
 
 	// Use this for initialization
-	void Start () {
-		getNextPoint();
+	void Awake () {
+		getDirectionVec(null);
 		speed = mainSpeed;
 	}
 	
@@ -38,22 +38,27 @@ public class Ball : MonoBehaviour {
 		transform.Translate(dir * speed);
 		if((targetRailPoint.transform.position - transform.position).sqrMagnitude <= (dir * speed).sqrMagnitude) {
 			transform.SetPositionAndRotation(targetRailPoint.transform.position, Quaternion.identity);
-			getNextPoint();
+			if(!checkSameNextPoint()){
+				getNextPoint();
+			}
 		}
 	}
 
 	private void getNextPoint() {
-		bool test = checkSameNextPoint();
+		RailPoint last = targetRailPoint;
 		targetRailPoint = targetRailPoint.nextPoint;
-		if(!test) {
-			targetRailPoint.Activate();
-			dir = targetRailPoint.transform.position - transform.position ;
-			dir.Normalize();
-		}
+
+		getDirectionVec(last);
+	}
+
+	private void getDirectionVec(RailPoint last) {
+		targetRailPoint.Activate(last);
+		dir = targetRailPoint.transform.position - transform.position ;
+		dir.Normalize();
 	}
 
 	private bool checkSameNextPoint() {
-		if(targetRailPoint == targetRailPoint.nextPoint) {
+		if(targetRailPoint.nextPoint == null) {
 			speed = 0;
 			return true;
 		}

@@ -5,17 +5,19 @@ using UnityEngine;
 [System.Serializable]
 public class RailPoint : InputEventListener {
 
+	[SerializeField]
+
 	public RailPoint nextPoint;
 
 	[SerializeField]
 	bool isSwitch;
 
+	public bool IsSwitch { get { return isSwitch; } }
+
 	[SerializeField]
-	private RailPoint switchClock;
-	[SerializeField]
-	private RailPoint switchCounter;
-	[SerializeField]
-	private RailPoint switchPassThru;
+	RailPoint[] Switches;
+
+	public float joystickResetTime;
 
 	// Use this for initialization
 	void Start () {
@@ -25,37 +27,45 @@ public class RailPoint : InputEventListener {
 	// Update is called once per frame
 	void Update () {
 		
+		
 	}
 
 	public override void RaiseEvent(InputCode ic) {
-		if(ic == InputCode.Up) {
-			nextPoint = switchCounter;
-		}
-		else if(ic == InputCode.Right) {
-			nextPoint = switchPassThru;
-		}
-		else if(ic == InputCode.Down) {
-			nextPoint = switchClock;
-		}
+		nextPoint = Switches[(int) ic];
+		StopCoroutine("resetPoint");
+		StartCoroutine("resetPoint");
 	}
 
-	public void Activate() {
+	IEnumerator resetPoint()
+	{
+		yield return new WaitForSeconds(joystickResetTime);
+		nextPoint = this;
+		yield return null;
+	}
+
+	public void Activate(RailPoint point) {
 		if(isSwitch) {
+			StopCoroutine("resetPoint");
+
+			nextPoint = null;
+
 			InputManager mgr = (InputManager) GameObject.Find("InputManager").GetComponent("InputManager");
 
-			if(switchCounter != null) {
-				nextPoint = this;
-				mgr.RegisterListener(this, InputCode.Up);
+			InputCode direction;
+			for(direction = (InputCode) 0; direction < InputCode.Button1 && Switches[(int) direction] != point; direction++) {
 			}
 
-			if(switchClock != null) {
-				nextPoint = this;
-				mgr.RegisterListener(this, InputCode.Down);
+			for(InputCode i = (InputCode) 0; i < InputCode.Button1; ++i) {
+				if(i != direction && Switches[(int) i] != null) {
+					mgr.RegisterListener(this, i);
+				}
 			}
-
-			if(switchPassThru != null) {
-				nextPoint = switchPassThru;
-				mgr.RegisterListener(this, InputCode.Right);
+		}
+		else {
+			foreach(RailPoint i in Switches) {
+				if(i != null && i != point) {
+					nextPoint = i;
+				}
 			}
 		}
 	}
@@ -63,16 +73,10 @@ public class RailPoint : InputEventListener {
 	public void Deactivate() {
 		InputManager mgr = (InputManager) GameObject.Find("InputManager").GetComponent("InputManager");
 
-		if(switchCounter != null) {
-			mgr.DeregisterListener(this, InputCode.Up);
+		for(InputCode i = (InputCode) 0; i < InputCode.Button1; ++i) {
+			mgr.DeregisterListener(this, i);
 		}
 
-		if(switchClock != null) {
-			mgr.DeregisterListener(this, InputCode.Down);
-		}
-
-		if(switchPassThru != null) {
-			mgr.DeregisterListener(this, InputCode.Right);
-		}
 	}
+
 }

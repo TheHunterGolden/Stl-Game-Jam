@@ -5,8 +5,8 @@ using UnityEngine;
 
 public enum InputCode {
 	Up,
-	Down,
 	Left,
+	Down,
 	Right,
 	Button1,
 	Button2,

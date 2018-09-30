@@ -113,298 +113,430 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &187568577
-GameObject:
+--- !u!1001 &109148699
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 187568580}
-  - component: {fileID: 187568579}
-  - component: {fileID: 187568578}
-  m_Layer: 0
-  m_Name: RailPoint3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &187568578
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.415876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 997487167}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 1095818184}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &142238811 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 187568577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1581960521}
   m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextPoint: {fileID: 388154733}
-  isSwitch: 0
-  switchClock: {fileID: 0}
-  switchCounter: {fileID: 0}
-  switchPassThru: {fileID: 0}
---- !u!212 &187568579
-SpriteRenderer:
+--- !u!1001 &313163279
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 187568577}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bb32a89b593752744b8c2dd80dd94959, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 12.8, y: 6.4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &187568580
-Transform:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 42.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 890793731}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 626319881}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 792194406}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &354028371
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 187568577}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.1, y: 6, z: -0.4453125}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &246017566
-GameObject:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 34.535873
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1664390150}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 1185390381}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 816940616}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &396154427
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 246017569}
-  - component: {fileID: 246017568}
-  - component: {fileID: 246017567}
-  m_Layer: 0
-  m_Name: RailPoint2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &246017567
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.415876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 42.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1847301456}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 1653069538}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &402866858
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.415876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1767378962}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 2104490388}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1847301456}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &446732182
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.1100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 25.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1653069538}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 1847301456}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 2104490388}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 142238811}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &626319881 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 246017566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 446732182}
   m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextPoint: {fileID: 246017567}
-  isSwitch: 1
-  switchClock: {fileID: 388154733}
-  switchCounter: {fileID: 187568578}
-  switchPassThru: {fileID: 0}
---- !u!212 &246017568
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 246017566}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bb32a89b593752744b8c2dd80dd94959, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 12.8, y: 6.4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &246017569
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 246017566}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.8, y: -7, z: -0.4453125}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &388154732
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 388154735}
-  - component: {fileID: 388154734}
-  - component: {fileID: 388154733}
-  m_Layer: 0
-  m_Name: RailPoint1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &388154733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 388154732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextPoint: {fileID: 246017567}
-  isSwitch: 0
-  switchClock: {fileID: 0}
-  switchCounter: {fileID: 0}
-  switchPassThru: {fileID: 0}
---- !u!212 &388154734
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 388154732}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bb32a89b593752744b8c2dd80dd94959, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 12.8, y: 6.4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &388154735
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 388154732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.9, y: -7, z: -0.4453125}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &628451058 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1158046467762862, guid: b754b94818d1f304ba03e0796acfece3,
     type: 2}
   m_PrefabInternal: {fileID: 1008971584}
---- !u!114 &628451059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 628451058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a29b8a3a1025a75488f47739b168aa3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &628451062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,9 +548,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcdcb71cb9b45f24f80ab9264eb7d84c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRailPoint: {fileID: 388154733}
+  targetRailPoint: {fileID: 997487167}
   dir: {x: 0, y: 0, z: 0}
   mainSpeed: 1
+--- !u!4 &628451063 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4092395498149516, guid: b754b94818d1f304ba03e0796acfece3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1008971584}
+--- !u!114 &792194406 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1042172460}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!114 &816940616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1639453123}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!114 &855074484 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 354028371}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!114 &890793731 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 396154427}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!114 &997487167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 402866858}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
 --- !u!1001 &1008971584
 Prefab:
   m_ObjectHideFlags: 0
@@ -428,11 +595,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4092395498149516, guid: b754b94818d1f304ba03e0796acfece3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -17.8
+      value: -35.8
       objectReference: {fileID: 0}
     - target: {fileID: 4092395498149516, guid: b754b94818d1f304ba03e0796acfece3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 8.6
       objectReference: {fileID: 0}
     - target: {fileID: 4092395498149516, guid: b754b94818d1f304ba03e0796acfece3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -460,6 +627,160 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b754b94818d1f304ba03e0796acfece3, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1042172460
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 42.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 1653069538}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 142238811}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 1932735617}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &1095818184 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1852892800}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!114 &1185390381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2084026035}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!1001 &1494750592
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.415876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 25.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 890793731}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 997487167}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 626319881}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1545105112
 GameObject:
@@ -539,13 +860,162 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1545105112}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.7, y: -0.5, z: -9.997591}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 628451063}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1581960521
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.229998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 25.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 792194406}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 626319881}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1185390381}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 1664390150}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1639453123
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 34.535873
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 1948568411}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 855074484}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &1653069538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 313163279}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!114 &1664390150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2145253706}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
 --- !u!1001 &1718964176
 Prefab:
   m_ObjectHideFlags: 0
@@ -583,8 +1053,464 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4053675240127020, guid: 0abcb51c3ce0aae4d9518abccc1f6f10, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0abcb51c3ce0aae4d9518abccc1f6f10, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &1767378962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 109148699}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!1001 &1818558454
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.229998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1185390381}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 1095818184}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 816940616}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &1847301456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1494750592}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!1001 &1852892800
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.1100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 2104490388}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 1767378962}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 1948568411}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &1932735617 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2065403439}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!114 &1948568411 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1818558454}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!1001 &2002602494
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 626319881}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 997487167}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1095818184}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 1185390381}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &2065403439
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 34.535873
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 42.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1664390150}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 792194406}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &2084026035
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 142238811}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 2104490388}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1948568411}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[3]
+      value: 
+      objectReference: {fileID: 855074484}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &2104490388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2002602494}
+  m_Script: {fileID: 11500000, guid: c4b2c0a905666bd4785a5a96ccdf4aa1, type: 3}
+--- !u!1001 &2145253706
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 34.535873
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 25.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042053726272914, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
+      propertyPath: m_Name
+      value: RailPoint1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: isSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1932735617}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 142238811}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 855074484}
+    - target: {fileID: 114934307332486342, guid: 982c7055fd8f3c44b87391538259185b,
+        type: 2}
+      propertyPath: joystickResetTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
   m_IsPrefabAsset: 0
