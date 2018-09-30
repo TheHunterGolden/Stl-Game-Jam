@@ -237,7 +237,7 @@ MonoBehaviour:
   smoothTime: 0.25
   attachSpeed: 10
   maxCameraSpeed: 20
-  offset: {x: 10, y: 0, z: 0}
+  offset: {x: 10, y: 10, z: 0}
 --- !u!1001 &1097783755
 Prefab:
   m_ObjectHideFlags: 0

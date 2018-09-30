@@ -234,7 +234,7 @@ Prefab:
         type: 2}
       propertyPath: nextPoint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1440503078}
     - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
       propertyPath: m_LocalScale.x
       value: 0.24999999
@@ -351,11 +351,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a102a102093bf4cb36bd5b7e1350b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sparky: {fileID: 718639338}
   followObject: {fileID: 718639341}
   deltaSpeed: 0.5
-  smoothTime: 0.25
-  attachSpeed: 15
-  maxCameraSpeed: 15
+  smoothTime: 0.125
+  maxCameraSpeed: 5
   offset: {x: 10, y: 10, z: 0}
 --- !u!114 &490812736 stripped
 MonoBehaviour:
@@ -5022,7 +5022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRailPoint: {fileID: 1440503078}
   dir: {x: 0, y: 0, z: 0}
-  mainSpeed: 1
+  mainSpeed: 0.1
 --- !u!114 &718639343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5344,7 +5344,7 @@ Prefab:
         type: 2}
       propertyPath: nextPoint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1440503078}
     - target: {fileID: 4924358495979628, guid: 982c7055fd8f3c44b87391538259185b, type: 2}
       propertyPath: m_LocalScale.x
       value: 0.24999999
